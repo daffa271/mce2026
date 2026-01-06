@@ -52,7 +52,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-6 sm:pt-8 w-full sm:w-auto px-4">
-                <a href="{{ route('campuses.index') }}"
+                <a href="{{ route('register') }}"
                     class="group relative inline-flex items-center justify-center gap-2 bg-[#F2BB16] text-[#0E6973] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-xl hover:shadow-2xl hover:bg-[#BF820F] transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
                     <span>Jelajahi Kampus</span>
                     <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@
                     </svg>
                 </a>
 
-                <a href="{{ route('schedule.index') }}"
+                <a href="{{ route('register') }}"
                     class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-white/20 transition-all duration-300 w-full sm:w-auto">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -89,7 +89,7 @@
                 <circle cx="5" cy="5" r="1" fill="currentColor" />
                 <circle cx="15" cy="15" r="1" fill="currentColor" />
             </pattern>
-            <rect width="100" height="100" fill="url(#batik-pattern)" />
+
         </svg>
     </div>
 
@@ -160,7 +160,7 @@
                             </div>
                             <div>
                                 <div class="text-lg sm:text-2xl font-bold text-gray-900">2026</div>
-                                <div class="text-xs sm:text-sm text-gray-600">Event Terbesar</div>
+                                <div class="text-xs sm:text-sm text-gray-600">Event Pendidikan</div>
                             </div>
                         </div>
                     </div>
@@ -298,7 +298,7 @@
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full sm:w-auto px-4">
-            <a href="{{ route('feedback.create') }}"
+            <a href="{{ route('feedback.guest-form') }}"
                 class="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#F2BB16] text-[#0E6973] font-bold px-6 sm:px-10 py-4 sm:py-5 rounded-full shadow-2xl hover:shadow-[#F2BB16]/50 hover:bg-[#BF820F] hover:scale-105 transition-all duration-300 w-full sm:w-auto">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -309,9 +309,9 @@
                 </svg>
             </a>
 
-            <a href="{{ route('campuses.index') }}"
+            <a href="{{ route('register') }}"
                 class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold px-6 sm:px-8 py-4 sm:py-5 rounded-full hover:bg-white/20 transition-all duration-300 w-full sm:w-auto">
-                <span>Lihat Semua Kampus</span>
+                <span>Daftar & Buat Akun</span>
             </a>
         </div>
 

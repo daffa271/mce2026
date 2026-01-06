@@ -1,0 +1,382 @@
+@extends('layouts.app')
+
+@section('title', 'Kirim Aspirasi & Saran - Magetan Campus Expo 2026')
+
+@section('content')
+
+<!-- Hero Section with Privacy Emphasis -->
+<section class="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-5 left-5 sm:top-10 sm:left-10 w-40 h-40 sm:w-72 sm:h-72 bg-emerald-400 rounded-full filter blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-5 right-5 sm:bottom-10 sm:right-10 w-48 h-48 sm:w-96 sm:h-96 bg-teal-400 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 1s"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <!-- Privacy Badge -->
+        <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-emerald-200 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-4 sm:mb-6 shadow-lg text-xs sm:text-sm">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span class="text-sm font-semibold text-emerald-700">100% Anonim & Privasi Terjaga</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+            Suara Anda,
+            <span class="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                Masa Depan MCE
+            </span>
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed px-2">
+            Bantu kami menciptakan Magetan Campus Expo 2026 yang lebih baik dengan kritik, saran, dan ide cemerlang Anda
+        </p>
+    </div>
+</section>
+
+<!-- Main Feedback Form -->
+<section class="py-8 sm:py-16 -mt-6 sm:-mt-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-12">
+            <!-- Trust Indicator Cards -->
+            <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 text-center">
+                <div class="w-12 sm:w-14 h-12 sm:h-14 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <svg class="w-5 sm:w-7 h-5 sm:h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-2">Anonim Total</h3>
+                <p class="text-sm text-gray-600">Identitas Anda tidak akan tercatat atau tersimpan</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+                <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-2">Data Terlindungi</h3>
+                <p class="text-sm text-gray-600">Aspirasi Anda tersimpan dengan enkripsi tingkat tinggi</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+                <div class="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-2">Respon Cepat</h3>
+                <p class="text-sm text-gray-600">Tim panitia akan menindaklanjuti setiap masukan</p>
+            </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+
+            <!-- Form Header -->
+            <div class="bg-gradient-to-r from-emerald-600 to-teal-600 px-8 py-8 text-white">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-2">Formulir Aspirasi & Masukan</h2>
+                        <p class="text-emerald-100">
+                            Sampaikan pendapat jujur Anda untuk membantu kami mewujudkan MCE 2026 yang lebih berkualitas
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert Messages -->
+            <div class="px-8 pt-6">
+                @if(session('success'))
+                <div class="bg-emerald-50 border-l-4 border-emerald-500 rounded-lg p-4 mb-6 flex items-start gap-3 animate-pulse">
+                    <svg class="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold text-emerald-900">Terima Kasih!</p>
+                        <p class="text-emerald-700 text-sm">{{ session('success') }}</p>
+                    </div>
+                </div>
+                @endif
+
+                @if($errors->any())
+                <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-4 mb-6">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div class="flex-1">
+                            <p class="font-semibold text-red-900 mb-2">Terdapat Kesalahan:</p>
+                            <ul class="list-disc list-inside space-y-1 text-sm text-red-700">
+                                @foreach($errors->all() as $err)
+                                <li>{{ $err }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                @endif
+            </div>
+
+            <!-- Form Body -->
+            <form action="{{ route('feedback.store') }}" method="POST" class="px-8 pb-8 space-y-6">
+                @csrf
+
+                <!-- Category Selection -->
+                <div>
+                    <label for="category" class="block text-gray-900 font-bold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        Kategori Masukan <span class="text-sm font-normal text-gray-600">(Opsional)</span>
+                    </label>
+                    <select name="category" id="category" class="w-full border-2 border-gray-300 rounded-xl p-4 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 transition-all outline-none text-gray-900 bg-white">
+                        <option value="">📋 Pilih Kategori (Opsional)</option>
+                        <option value="Acara">🎪 Konsep & Pelaksanaan Acara</option>
+                        <option value="Publikasi">📢 Publikasi & Promosi</option>
+                        <option value="Konsumsi">🍱 Konsumsi & Fasilitas</option>
+                        <option value="Dokumentasi">📸 Dokumentasi & Media</option>
+                        <option value="Sponsorship">🤝 Sponsorship & Partnership</option>
+                        <option value="Teknis">⚙️ Teknis & Operasional</option>
+                        <option value="Lainnya">✨ Lainnya</option>
+                    </select>
+                </div>
+
+                <!-- Message Input -->
+                <div>
+                    <label for="message" class="block text-gray-900 font-bold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                        Aspirasi, Kritik, atau Saran Anda <span class="text-red-500">*</span>
+                    </label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        rows="6"
+                        class="w-full border-2 border-gray-300 rounded-xl p-4 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 transition-all outline-none resize-none"
+                        placeholder="Contoh:
+• Saya menyarankan untuk menambah booth interaktif agar lebih engaging...
+• Menurut saya publikasi event perlu diperluas ke media sosial lain...
+• Akan lebih baik jika jadwal acara dibuat lebih fleksibel...
+
+Sampaikan dengan jujur dan detail, tim kami siap mendengarkan! 🙏"
+                        required>{{ old('message') }}</textarea>
+                    <div class="flex items-center gap-2 mt-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Minimal 10 karakter. Tulis sejujur-jujurnya, identitas Anda tetap anonim.</span>
+                    </div>
+                </div>
+
+                <!-- Privacy Reminder -->
+                <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-900 mb-2">Jaminan Privasi & Keamanan</h4>
+                            <ul class="space-y-1 text-sm text-emerald-800">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Tidak ada sistem login atau tracking IP address</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Data hanya dapat diakses oleh ketua pelaksana MCE 2026</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Sistem enkripsi end-to-end untuk melindungi pesan Anda</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button
+                        type="submit"
+                        class="group flex-1 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold px-8 py-4 rounded-xl hover:shadow-2xl hover:shadow-emerald-500/50 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                        <span>Kirim Aspirasi Sekarang</span>
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="sm:w-auto px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 hover:border-gray-400 transition-all duration-200">
+                        Reset Form
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mt-16 bg-white rounded-3xl shadow-xl p-8 border border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Pertanyaan yang Sering Diajukan
+            </h3>
+
+            <div class="space-y-4">
+                <details class="group bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-colors">
+                    <summary class="font-semibold text-gray-900 cursor-pointer flex justify-between items-center">
+                        <span>Apakah aspirasi saya benar-benar anonim?</span>
+                        <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Ya, 100% anonim! Sistem kami tidak menyimpan nama, email, IP address, atau informasi identitas apapun. Hanya pesan dan kategori yang tercatat.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-colors">
+                    <summary class="font-semibold text-gray-900 cursor-pointer flex justify-between items-center">
+                        <span>Siapa yang akan membaca aspirasi saya?</span>
+                        <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Hanya ketua pelaksana dan tim inti MCE 2026 yang memiliki akses. Setiap masukan akan dibahas dalam rapat evaluasi untuk perbaikan acara.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-colors">
+                    <summary class="font-semibold text-gray-900 cursor-pointer flex justify-between items-center">
+                        <span>Bolehkah saya memberikan kritik keras?</span>
+                        <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Tentu saja! Kami sangat menghargai kritik konstruktif. Jujurlah dalam menyampaikan pendapat, karena itulah yang membantu kami berkembang lebih baik.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-colors">
+                    <summary class="font-semibold text-gray-900 cursor-pointer flex justify-between items-center">
+                        <span>Apakah aspirasi saya akan ditindaklanjuti?</span>
+                        <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Setiap aspirasi yang masuk akan dibaca, dikategorikan, dan dibahas dalam rapat evaluasi. Masukan yang konstruktif akan menjadi bahan perbaikan untuk MCE 2026.
+                    </p>
+                </details>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl p-8 text-white text-center shadow-xl">
+                <div class="text-5xl font-bold mb-2">500+</div>
+                <div class="text-emerald-100 font-medium">Aspirasi Diterima</div>
+            </div>
+            <div class="bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl p-8 text-white text-center shadow-xl">
+                <div class="text-5xl font-bold mb-2">100%</div>
+                <div class="text-teal-100 font-medium">Privasi Terjaga</div>
+            </div>
+            <div class="bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl p-8 text-white text-center shadow-xl">
+                <div class="text-5xl font-bold mb-2">24/7</div>
+                <div class="text-cyan-100 font-medium">Selalu Terbuka</div>
+            </div>
+        </div>
+
+        <!-- Call to Action Bottom -->
+        <div class="mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl p-10 text-center text-white shadow-2xl">
+            <div class="max-w-2xl mx-auto">
+                <h3 class="text-3xl font-bold mb-4">Bersama Wujudkan MCE 2026 yang Lebih Baik!</h3>
+                <p class="text-emerald-100 text-lg leading-relaxed">
+                    Setiap suara Anda berharga. Mari bersama-sama menciptakan event yang berkualitas,
+                    menginspirasi, dan memberikan dampak positif bagi generasi muda Magetan.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional CSS for Smooth Animations -->
+<style>
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    form>div {
+        animation: slideUp 0.6s ease-out backwards;
+    }
+
+    form>div:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    form>div:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    form>div:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    form>div:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    form>div:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    /* Smooth Textarea Resize */
+    textarea {
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    /* Radio Button Custom Styling */
+    input[type="radio"]:checked+div {
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+
+    /* Details Element Animation */
+    details[open]>summary {
+        margin-bottom: 12px;
+    }
+</style>
+
+@endsection

@@ -7,10 +7,31 @@ use Illuminate\Http\Request;
 
 class CampusController extends Controller
 {
+    // Preview untuk guest (terbatas)
+    public function preview()
+    {
+        $campuses = Campus::latest()->take(3)->get();
+        return view('campuses.preview', compact('campuses'));
+    }
+
+    // Full index untuk user login
     public function index()
     {
         $campuses = Campus::all();
         return view('campuses.index', compact('campuses'));
+    }
+
+    // Detail kampus
+    public function show(Campus $campus)
+    {
+        return view('campuses.show', compact('campus'));
+    }
+
+    // Admin index
+    public function adminIndex()
+    {
+        $campuses = Campus::all();
+        return view('admin.campuses.index', compact('campuses'));
     }
 
     public function create()

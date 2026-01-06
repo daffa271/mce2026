@@ -8,10 +8,25 @@ use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
+    // Preview untuk guest (terbatas)
+    public function preview()
+    {
+        $galleries = Gallery::latest()->take(6)->get();
+        return view('gallery.preview', compact('galleries'));
+    }
+
+    // Full index untuk user login
     public function index()
     {
         $galleries = Gallery::latest()->paginate(12);
         return view('gallery.index', compact('galleries'));
+    }
+
+    // Admin index
+    public function adminIndex()
+    {
+        $galleries = Gallery::latest()->paginate(12);
+        return view('admin.galleries.index', compact('galleries'));
     }
 
     public function store(Request $request)
